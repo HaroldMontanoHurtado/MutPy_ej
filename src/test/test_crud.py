@@ -1,22 +1,32 @@
-from unittest import TestCase#, main
-from db.consultas import add_cliente, add_empleado, add_venta
+from unittest import TestCase , main
+from db.consultas import * # app, add_cliente, add_empleado, add_venta
 
 class TestDatabaseFunctions(TestCase):
+    def setUp(self):
+        self.app = app.test_client()
+
     def test_add_empleado(self):
-        id = add_empleado("Juan")
-        self.assertIsNotNone(id, "Failed to add employee")
+        with app.app_context():
+            add_empleado('Juan')
+            cur = mysql.connection.cursor()
+            result = cur.execute("SELECT * FROM empleados WHERE nombre = 'Juan'")
+            self.assertEqual(result, 1)
 
-    def test_add_cliente(self):
-        id = add_cliente("Carlos")
-        self.assertIsNotNone(id, "Failed to add client")
+    def test_añadir_cliente(self):
+        with app.app_context():
+            add_cliente('Pedro')
+            cur = mysql.connection.cursor()
+            result = cur.execute("SELECT * FROM clientes WHERE nombre = 'Pedro'")
+            self.assertEqual(result, 1)
 
-    def test_add_venta(self):
-        id_empleado = add_empleado("Juan")
-        id = add_venta("Arroz", id_empleado)
-        self.assertIsNotNone(id, "Failed to add sale")
+    def test_añadir_venta(self):
+        with app.app_context():
+            add_venta('Producto X', 1)
+            cur = mysql.connection.cursor()
+            result = cur.execute("SELECT * FROM ventas WHERE producto = 'Producto X' AND id_empleado = 1")
+            self.assertEqual(result, 1)
 
-def prueba_test():
-    print('si testea')
+prueba()
 
 #if __name__ == '__main__':
 #    main()
