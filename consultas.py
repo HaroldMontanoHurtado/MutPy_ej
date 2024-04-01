@@ -1,4 +1,4 @@
-from .connection import *
+from db.connection import *
 
 def add_empleado(nombre):
     with app.app_context():

@@ -1,8 +1,8 @@
 from unittest import TestCase , main
-from db.consultas import * # app, add_cliente, add_empleado, add_venta
+from consultas import *# app, add_cliente, add_empleado, add_venta
+import consultas as c
 
-prueba_consulta()
-'''
+c.prueba_consulta()
 class TestDatabaseFunctions(TestCase):
     def setUp(self):
         self.app = app.test_client()
@@ -27,6 +27,6 @@ class TestDatabaseFunctions(TestCase):
             cur = mysql.connection.cursor()
             result = cur.execute("SELECT * FROM ventas WHERE producto = 'Producto X' AND id_empleado = 1")
             self.assertEqual(result, 1)
-'''
+
 #if __name__ == '__main__':
 #    main()
