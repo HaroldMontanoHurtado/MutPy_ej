@@ -28,4 +28,6 @@ elif (text==3):
     
 elif (text==4):
     reporte_venta()
+else:
+    pass
 
