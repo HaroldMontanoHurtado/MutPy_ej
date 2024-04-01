@@ -8,9 +8,9 @@ class TestDatabaseFunctions(TestCase):
 
     def test_add_empleado(self):
         with app.app_context():
-            add_empleado('Juan')
+            add_empleado('Javier')
             cur = mysql.connection.cursor()
-            result = cur.execute("SELECT * FROM empleados WHERE nombre = 'Juan'")
+            result = cur.execute("SELECT * FROM empleados WHERE nombre = 'Javier'")
             self.assertEqual(result, 1)
 
     def test_add_cliente(self):

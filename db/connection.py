@@ -3,9 +3,9 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_HOST'] = '127.0.0.1' #'localhost' # en windows # '172.17.0.1' # En Debian
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_PASSWORD'] = 'dbpass' # normalmente es sin contraseña
 app.config['MYSQL_DB'] = 'ejmutpy'
 
 mysql = MySQL(app)
