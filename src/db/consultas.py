@@ -33,7 +33,7 @@ def add_venta(producto, id_empleado):
         except (Exception) as error:
             print(error)
 
-def imprimir_clientes():
+def imprimir_empleados():
     with app.app_context():
         quary="SELECT * FROM empleados"
         try:
