@@ -1,4 +1,4 @@
-from consultas import *
+from db.consultas import *
 from test.test_crud import *
 
 print(' - - - - CRUD - - - -')
