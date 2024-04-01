@@ -9,7 +9,7 @@ print('4. Reporte de ventas.')
 print('5. Salir.')
 
 while(True):
-    opc = int(input('Digite: '))
+    opc = int(input('\nDigite una de las opciones: '))
 
     if (opc==1):
         imprimir_empleados()

@@ -40,7 +40,7 @@ def imprimir_empleados():
             cursor = mysql.connection.cursor()
             cursor.execute(quary)
             empleados = cursor.fetchall()
-            print("Empleados:")
+            print("\nEmpleados:")
             for empleado in empleados:
                 print(f"ID: {empleado[0]}, Nombre: {empleado[1]}")
         except Exception as ex:
@@ -53,7 +53,7 @@ def imprimir_clientes():
             cursor = mysql.connection.cursor()
             cursor.execute(quary)
             clientes = cursor.fetchall()
-            print("Clientes:")
+            print("\nClientes:")
             for cliente in clientes:
                 print(f"ID: {cliente[0]}, Nombre: {cliente[1]}")
         except Exception as ex:
@@ -71,7 +71,7 @@ ORDER BY ventas DESC;"""
             cursor = mysql.connection.cursor()
             cursor.execute(quary)
             ventas = cursor.fetchall()
-            print("Reporte de ventas:")
+            print("\nReporte de ventas:")
             for venta in ventas:
                 print(f"Cant. Vendida: {venta[1]}, Empleado: {venta[0]}")
                 #print(venta)
