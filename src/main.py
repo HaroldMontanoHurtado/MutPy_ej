@@ -14,7 +14,8 @@ while(True):
     if (opc==1):
         imprimir_empleados()
         txt = input('Nombre empleado: ')
-        add_empleado(txt)
+        id = add_empleado(txt)
+        print(f'Empleado_id: {id}')
         imprimir_empleados()
         
     elif (opc==2):
