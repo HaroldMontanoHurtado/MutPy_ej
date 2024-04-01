@@ -81,5 +81,5 @@ ORDER BY ventas DESC;"""
         except Exception as ex:
             print(f"Error al obtener las ventas:\n{ex}")
 
-def prueba():
+def prueba_consulta():
     print('Prueba consultas db')
