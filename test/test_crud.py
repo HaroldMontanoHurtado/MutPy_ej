@@ -1,8 +1,7 @@
+from db.connection import app, mysql
 from unittest import TestCase , main
-from consultas import *# app, add_cliente, add_empleado, add_venta
-import consultas as c
+from consultas import add_cliente, add_empleado, add_venta
 
-c.prueba_consulta()
 class TestDatabaseFunctions(TestCase):
     def setUp(self):
         self.app = app.test_client()
