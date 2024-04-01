@@ -1,6 +1,5 @@
 from db.consultas import *
 from test.test_crud import *
-from sys import exit
 
 print(' - - - - CRUD - - - -')
 print('1. Añadir empleados.')
@@ -31,7 +30,8 @@ while(True):
         
     elif (opc==4):
         reporte_venta()
+        
     elif (opc==5):
-        exit()
+        break
     else:
         pass
