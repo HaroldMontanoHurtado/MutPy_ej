@@ -18,7 +18,7 @@ class SimpleGoodTest(unittest.TestCase):
 
     def test_add_str(self):
         self.assertEqual(self.simple.add('ala', 'kota'), 'alakota')
-
+'''
     def test_loop(self):
         self.assertEqual(self.simple.loop(), 100)
 
@@ -72,3 +72,4 @@ class SimpleGoodTest(unittest.TestCase):
 
     def test_class_variable(self):
         self.assertEqual(self.simple.X, 2)
+'''

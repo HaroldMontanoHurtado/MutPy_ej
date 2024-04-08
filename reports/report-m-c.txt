@@ -1,0 +1,526 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 90.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:simple ''
+  mutations:
+  - lineno: 40
+    operator: AOD
+  number: 1
+  status: survived
+  tests_run: 21
+  time: 0.020910263061523438
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 48, in test_negate_number\n    self.assertEqual(self.simple.negate_number(10),\
+    \ -10)\nAssertionError: 10 != -10\n"
+  killer: test_negate_number (simple_good_test.SimpleGoodTest.test_negate_number)
+  module: *id001
+  mutations:
+  - lineno: 66
+    operator: AOD
+  number: 2
+  status: killed
+  tests_run: 19
+  time: 0.016611099243164062
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 11, in test_add\n    self.assertEqual(self.simple.add(2, 2), 4)\nAssertionError:\
+    \ 0 != 4\n"
+  killer: test_add (simple_good_test.SimpleGoodTest.test_add)
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.014520406723022461
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: AOR
+  number: 4
+  status: timeout
+  tests_run: null
+  time: 5.007587909698486
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: AOR
+  number: 5
+  status: survived
+  tests_run: 21
+  time: 0.006936550140380859
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 45, in test_is_not_odd\n    self.assertFalse(self.simple.is_odd(2))\nAssertionError:\
+    \ True is not false\n"
+  killer: test_is_not_odd (simple_good_test.SimpleGoodTest.test_is_not_odd)
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 13
+  time: 0.01814126968383789
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 35, in test_get_inc_const\n    self.assertEqual(self.simple.get_inc_const(),\
+    \ 1338)\nAssertionError: 1336 != 1338\n"
+  killer: test_get_inc_const (simple_good_test.SimpleGoodTest.test_get_inc_const)
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 10
+  time: 0.01626276969909668
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 48, in test_negate_number\n    self.assertEqual(self.simple.negate_number(10),\
+    \ -10)\nAssertionError: 10 != -10\n"
+  killer: test_negate_number (simple_good_test.SimpleGoodTest.test_negate_number)
+  module: *id001
+  mutations:
+  - lineno: 66
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 19
+  time: 0.01659250259399414
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: ASR
+  number: 9
+  status: timeout
+  tests_run: null
+  time: 5.007344007492065
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 68, in test_overridden_call\n    self.assertEqual(self.simple.x, 2)\nAssertionError:\
+    \ 0 != 2\n"
+  killer: test_overridden_call (simple_good_test.SimpleGoodTest.test_overridden_call)
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: ASR
+  number: 10
+  status: killed
+  tests_run: 20
+  time: 0.01717400550842285
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 51, in test_negate_bool\n    self.assertEqual(self.simple.negate_bool(True),\
+    \ False)\nAssertionError: True != False\n"
+  killer: test_negate_bool (simple_good_test.SimpleGoodTest.test_negate_bool)
+  module: *id001
+  mutations:
+  - lineno: 69
+    operator: COD
+  number: 11
+  status: killed
+  tests_run: 18
+  time: 0.0183260440826416
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 23, in test_loop\n    self.assertEqual(self.simple.loop(), 100)\nAssertionError:\
+    \ 0 != 100\n"
+  killer: test_loop (simple_good_test.SimpleGoodTest.test_loop)
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: COI
+  number: 12
+  status: killed
+  tests_run: 16
+  time: 0.015178918838500977
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 45, in test_is_not_odd\n    self.assertFalse(self.simple.is_odd(2))\nAssertionError:\
+    \ True is not false\n"
+  killer: test_is_not_odd (simple_good_test.SimpleGoodTest.test_is_not_odd)
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: COI
+  number: 13
+  status: killed
+  tests_run: 13
+  time: 0.01506495475769043
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: CRP
+  number: 14
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: CRP
+  number: 15
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: CRP
+  number: 16
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 17
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: CRP
+  number: 18
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 19
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 20
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 32
+    operator: CRP
+  number: 21
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: CRP
+  number: 22
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: CRP
+  number: 23
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 24
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: CRP
+  number: 25
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: CRP
+  number: 26
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 56
+    operator: CRP
+  number: 27
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: CRP
+  number: 28
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 81
+    operator: CRP
+  number: 29
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: CRP
+  number: 30
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 91
+    operator: CRP
+  number: 31
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 55
+    operator: DDL
+  number: 32
+  status: timeout
+  tests_run: null
+  time: 5.007432460784912
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 59
+    operator: DDL
+  number: 33
+  status: timeout
+  tests_run: null
+  time: 5.006958961486816
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 90
+    operator: EHD
+  number: 34
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 90
+    operator: EXS
+  number: 35
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: IHD
+  number: 36
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: IOD
+  number: 37
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 80
+    operator: IOD
+  number: 38
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 83
+    operator: IOD
+  number: 39
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 83
+    operator: IOP
+  number: 40
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 57, in test_bool_conjunction\n    self.assertEqual(self.simple.bool_conjunction(True,\
+    \ False), True)\nAssertionError: False != True\n"
+  killer: test_bool_conjunction (simple_good_test.SimpleGoodTest.test_bool_conjunction)
+  module: *id001
+  mutations:
+  - lineno: 75
+    operator: LCR
+  number: 41
+  status: killed
+  tests_run: 6
+  time: 0.014054298400878906
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 54, in test_negate_bitwise\n    self.assertEqual(self.simple.negate_bitwise(1),\
+    \ -2)\nAssertionError: 1 != -2\n"
+  killer: test_negate_bitwise (simple_good_test.SimpleGoodTest.test_negate_bitwise)
+  module: *id001
+  mutations:
+  - lineno: 72
+    operator: LOD
+  number: 42
+  status: killed
+  tests_run: 17
+  time: 0.015634536743164062
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 60, in test_bitwise_conjunction\n    self.assertEqual(self.simple.bitwise_conjunction(1,\
+    \ 0), 1)\nAssertionError: 0 != 1\n"
+  killer: test_bitwise_conjunction (simple_good_test.SimpleGoodTest.test_bitwise_conjunction)
+  module: *id001
+  mutations:
+  - lineno: 78
+    operator: LOR
+  number: 43
+  status: killed
+  tests_run: 5
+  time: 0.01481485366821289
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 23, in test_loop\n    self.assertEqual(self.simple.loop(), 100)\nAssertionError:\
+    \ 0 != 100\n"
+  killer: test_loop (simple_good_test.SimpleGoodTest.test_loop)
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: ROR
+  number: 44
+  status: killed
+  tests_run: 16
+  time: 0.014081954956054688
+- exception_traceback: "Traceback (most recent call last):\n  File \"/mnt/d/Proyectos_VSC/TG/MutPy_ej/example/test/simple_good_test.py\"\
+    , line 66, in test_overridden_call\n    self.simple.bar()\n  File \"simple\",\
+    \ line 85, in bar\nAttributeError: 'Simple' object has no attribute 'x'\n"
+  killer: test_overridden_call (simple_good_test.SimpleGoodTest.test_overridden_call)
+  module: *id001
+  mutations:
+  - lineno: 83
+    operator: SCD
+  number: 45
+  status: killed
+  tests_run: 20
+  time: 0.016573667526245117
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: SCI
+  number: 46
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 80
+    operator: SCI
+  number: 47
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: SIR
+  number: 48
+  status: incompetent
+  tests_run: 0
+  time: 0
+number_of_tests: 21
+targets:
+- example/simple.py
+tests:
+- name: simple_good_test
+  target: null
+  time: 0.0005979537963867188
+time_stats:
+  create_mutant_module: 0.053873300552368164
+  create_target_ast: 0.00688624382019043
+  inject_coverage_and_mutate_module: 0.006905317306518555
+  run_tests_with_mutant: 20.4272301197052
+total_time: 22.212917804718018
