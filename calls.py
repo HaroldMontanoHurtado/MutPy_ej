@@ -1,0 +1,2 @@
+from db.consultas import *
+

@@ -5,7 +5,7 @@ Un ejemplo más complejo del uso de MutPy-Pynguin
 python3 -m unittest -v test/test_crud.py
 
 # Prueba MutPy-Pynguin
-mut.py --target consultas.py --unit-test test/test_crud.py -m
+mut.py --target consultas.py --unit-test test/test_crud.py -m -c
 
 # ejecutar mutaciones y generar reporte en un text
 mut.py --target consultas.py --unit-test test/test_crud.py -m --report reports/report_01.txt

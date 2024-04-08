@@ -36,6 +36,17 @@ def add_venta(producto, id_empleado):
         except (Exception) as error:
             print(error)
 
+def prod_vendidos(id_empleado):
+    with app.app_context():
+        quary="""SELECT * FROM ventas WHERE id_empleado = %s;"""
+        try:
+            cur = mysql.connection.cursor()
+            result = cur.execute(quary, id_empleado,)
+            return result
+        except (Exception) as error:
+            print(error)
+
+
 def imprimir_empleados():
     with app.app_context():
         quary="SELECT * FROM empleados"
@@ -80,6 +91,3 @@ ORDER BY ventas DESC;"""
                 #print(venta)
         except Exception as ex:
             print(f"Error al obtener las ventas:\n{ex}")
-
-def prueba_consulta():
-    print('Prueba consultas db')
