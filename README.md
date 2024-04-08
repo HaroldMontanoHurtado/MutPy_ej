@@ -5,16 +5,16 @@ Un ejemplo más complejo del uso de MutPy-Pynguin
 python3 -m unittest -v test/test_crud.py
 
 # Prueba MutPy-Pynguin
-mut.py --target consultas.py --unit-test test/test_crud.py -m -c
+mut.py --target calls.py --unit-test test/test_crud.py -m -c
 
 # ejecutar mutaciones y generar reporte en un text
-mut.py --target consultas.py --unit-test test/test_crud.py -m --report reports/report_01.txt
+mut.py --target calls.py --unit-test test/test_crud.py -m --report reports/report_01.txt
 
 # ejecutar mutaciones html
-mut.py --target consultas.py --unit-test test/test_crud.py -m -c --report-html
+mut.py --target calls.py --unit-test test/test_crud.py -m -c --report-html
 
 # ejecutar mutaciones más agresivas y extensas
-mut.py --target consultas.py --unit-test test/test_crud.py -m -c -e
+mut.py --target calls.py --unit-test test/test_crud.py -m -c -e
 
 # Probar MutPy-Pynguin en example simple
 mut.py --target example/simple.py --unit-test example/test/simple_good_test.py -m -c
