@@ -8,7 +8,7 @@ def add_empleado(nombre):
             cur.execute(quary, (nombre,))
             mysql.connection.commit()
             cur.close()
-            print('ejecutó add_empleado()')
+            #print('ejecutó add_empleado()')
         except (Exception) as error:
             print(error)
 
@@ -20,7 +20,7 @@ def add_cliente(nombre):
             cur.execute(quary, (nombre,))
             mysql.connection.commit()
             cur.close()
-            print('ejecutó add_cliente()')
+            #print('ejecutó add_cliente()')
         except (Exception) as error:
             print(error)
 
@@ -32,7 +32,7 @@ def add_venta(producto, id_empleado):
             cur.execute(quary, (producto, id_empleado,))
             mysql.connection.commit()
             cur.close()
-            print('ejecutó add_venta()')
+            #print('ejecutó add_venta()')
         except (Exception) as error:
             print(error)
 

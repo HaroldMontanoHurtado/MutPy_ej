@@ -20,7 +20,7 @@ mut.py --target consultas.py --unit-test test/test_crud.py --report report.txt
 mut.py --target consultas.py --unit-test test/test_crud.py -m -c --report-html
 
 # ejecutar mutaciones más agresivas y extensas
-mut.py --target consultas.py --unit-test test/test_crud.py -m -c -e --report-html
+mut.py --target consultas.py --unit-test test/test_crud.py -m -c -e
 
 # Error al intentar conectar al localhost con WSL
 El error que estás experimentando indica que tu cliente no puede conectarse físicamente al servidor especificado1. Esto puede suceder si estás intentando conectarte a MySQL desde dentro de un entorno de WSL (Windows Subsystem for Linux) o un contenedor Docker.
@@ -28,3 +28,6 @@ El error que estás experimentando indica que tu cliente no puede conectarse fí
 Cuando intentas conectarte a 127.0.0.1 desde dentro de WSL o Docker, en realidad estás intentando conectarte al propio entorno de WSL o contenedor Docker, no a tu máquina host2. Como tu entorno de WSL o contenedor Docker no contiene tu base de datos, la conexión falla.
 
 Desde dentro de un entorno de WSL o contenedor Docker, puedes llegar a la máquina host en la dirección IP 172.17.0.12. Por lo tanto, tu URI de base de datos debería ser SQLALCHEMY_DATABASE_URI=mysql://root:dbpass@172.17.0.1/powerdns.
+
+# Probar MutPy-Pynguin en example simple
+mut.py --target consultas.py --unit-test test/test_crud.py -m
