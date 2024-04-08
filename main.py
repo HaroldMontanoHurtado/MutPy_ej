@@ -1,4 +1,5 @@
 from db.consultas import *
+from calls import *
 
 print(' - - - - CRUD - - - -')
 print('1. Añadir empleados.')
@@ -14,8 +15,7 @@ while(True):
     if (opc==1):
         imprimir_empleados()
         txt = input('Nombre empleado: ')
-        id = add_empleado(txt)
-        print(f'Empleado_id: {id}')
+        add_empleado(txt)
         imprimir_empleados()
         
     elif (opc==2):

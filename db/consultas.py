@@ -46,6 +46,43 @@ def prod_vendidos(id_empleado):
         except (Exception) as error:
             print(error)
 
+def lis_emp():
+    with app.app_context():
+        quary="SELECT * FROM empleados"
+        try:
+            cur = mysql.connection.cursor()
+            cur.execute(quary)
+            empleados = cur.fetchall()
+            return empleados
+        except Exception as ex:
+            print(f"Error al obtener los empleados:\n{ex}")
+
+def lis_clt():
+    with app.app_context():
+        quary="SELECT * FROM clientes"
+        try:
+            cur = mysql.connection.cursor()
+            cur.execute(quary)
+            clientes = cur.fetchall()
+            return clientes
+        except Exception as ex:
+            print(f"Error al obtener los clientes:\n{ex}")
+
+def lis_report_vent():
+    with app.app_context():
+        quary="""
+SELECT E.nombre, COUNT(V.id) as ventas
+FROM empleados E
+JOIN ventas V ON E.id = V.id_empleado
+GROUP BY E.nombre
+ORDER BY ventas DESC;"""
+        try:
+            cur = mysql.connection.cursor()
+            cur.execute(quary)
+            ventas = cur.fetchall()
+            return ventas
+        except Exception as ex:
+            print(f"Error al obtener las ventas:\n{ex}")
 
 def imprimir_empleados():
     with app.app_context():
