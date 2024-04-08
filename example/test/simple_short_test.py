@@ -15,3 +15,4 @@ class SimpleGoodTest(unittest.TestCase):
 
     def test_add_etc(self):
         self.assertEqual(self.simple.add_etc('ala, kot, pies'), 'ala, kot, pies etc.')
+    

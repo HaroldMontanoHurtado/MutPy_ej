@@ -18,7 +18,7 @@ mut.py --target consultas.py --unit-test test/test_crud.py -m -c -e
 
 # Probar MutPy-Pynguin en example simple
 mut.py --target example/simple.py --unit-test example/test/simple_good_test.py -m -c
-mut.py --target example/simple.py --unit-test example/test/simple_simple_test.py -m -c
+mut.py --target example/short.py --unit-test example/test/simple_short_test.py -m -c
 mut.py --target example/simple.py --unit-test example/test/simple_week_test.py -m -c
 # ejecutar mutaciones y generar reporte en un text
 mut.py --target example/simple.py --unit-test example/test/simple_good_test.py -m --report reports/report_01.txt
