@@ -1,11 +1,15 @@
 # MutPy_ej
 Un ejemplo más complejo del uso de MutPy-Pynguin
 
+# Ubicacion en Linux
+/mnt/d/Proyectos_VSC/TG
+
 # Pruebas unitarias de los tests 
 python3 -m unittest -v test/test_crud.py
 
 # Prueba MutPy-Pynguin
 mut.py --target calls.py --unit-test test/test_crud.py -m -c
+mut.py -t calls.py -u test/test_crud.py -m -c
 
 # ejecutar mutaciones y generar reporte en un text
 mut.py --target calls.py --unit-test test/test_crud.py -m --report reports/report_01.txt
