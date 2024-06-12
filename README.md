@@ -19,6 +19,7 @@ mut.py --target calls.py --unit-test test/test_crud.py -m -c --report-html
 
 # ejecutar mutaciones más agresivas y extensas
 mut.py --target calls.py --unit-test test/test_crud.py -m -c -e
+mut.py -t calls.py -u test/test_crud.py -m -c -e
 
 # Probar MutPy-Pynguin en example simple
 mut.py --target example/simple.py --unit-test example/test/simple_good_test.py -m -c
@@ -47,3 +48,9 @@ mut.py --target example/simple.py --unit-test example/test/simple_week_test.py -
 **survived: 0 (0.0%):** Este es el número y porcentaje de mutaciones que “sobrevivieron” a las pruebas. Una mutación “sobreviviente” significa que la prueba pasó a pesar de la mutación, lo cual no es el comportamiento deseado.
 **incompetent: 108 (94.7%):** Este es el número y porcentaje de mutaciones que se consideran “incompetentes”. Una mutación “incompetente” es una que no pudo ser ejecutada debido a errores de sintaxis o semánticos.
 **timeout: 0 (0.0%):** Este es el número y porcentaje de mutaciones que causaron que las pruebas se quedaran en un bucle infinito o excedieran el tiempo límite establecido.
+
+
+# Notas:
+Instalé un clone de mutpy; este es editable y se puede hacer pruebas mientras se hace cambios sobre la misma libreria
+Se instaló con esas caracteristicas con el siguiente comando:
+/mnt/d/Proyectos_VSC/TG/mutpy-pynguin-flask-mut$ pip3 install -e .

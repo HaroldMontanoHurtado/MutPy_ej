@@ -14,3 +14,4 @@ class TestDatabaseFunctions(TestCase):
     
     def test_cantVent(self):
         self.assertEqual(cantVent('Juan'), 10)
+    
