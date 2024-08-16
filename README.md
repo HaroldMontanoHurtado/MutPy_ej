@@ -4,8 +4,9 @@ Un ejemplo más complejo del uso de MutPy-Pynguin
 # Ubicacion en Linux
 /mnt/d/Proyectos_VSC/TG
 
-# Pruebas unitarias de los tests 
+# Pruebas unitarias de los tests
 python3 -m unittest -v test/test_crud.py
+python3 -m unittest -v test/test_simple.py
 
 # Prueba MutPy-Pynguin
 mut.py --target calls.py --unit-test test/test_crud.py -m -c
